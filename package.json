@@ -1,7 +1,18 @@
 {
   "dependencies": {
-    "express": "^4.18.3",
+    "express": "^4.19.1",
+    "firebase": "^10.9.0",
     "pm2": "^5.3.1",
-    "sanitize-html": "^2.12.1"
-  }
+    "sanitize-html": "^2.13.0"
+  },
+  "name": "capstonedesign",
+  "description": "경성대학교 소프트웨어학과 2024학년도 1학기 캡스톤디자인 과목 프로젝트입니다.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
