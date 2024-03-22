@@ -15,16 +15,17 @@ const firebaseConfig = {
 };
 
 
-expressApp.get('/', (req, res) => {
+expressApp.get('/index.html', (req, res) => {
   res.send('');
 });
 
-/*
-expressApp.post('/', (req, res) => {
-  res.send()
+expressApp.get('/depressionTest.html', (req, res) => {
+  res.send('');
 });
-*/
 
+expressApp.get('/depressionTestResult.html', (req, res) => {
+  res.send('');
+});
 
 expressApp.listen(port, () => {
 });
