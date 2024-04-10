@@ -1,0 +1,285 @@
+.test {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.test .test-page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1448px;
+  height: 3355px;
+  position: relative;
+}
+
+.test .footer {
+  position: absolute;
+  width: 1452px;
+  height: 205px;
+  top: 3150px;
+  left: 0;
+  background-color: transparent;
+}
+
+.test .overlap-group {
+  position: relative;
+  width: 1448px;
+  height: 205px;
+  background-color: #b2c1a6;
+}
+
+.test .line {
+  position: absolute;
+  width: 1448px;
+  height: 1px;
+  top: 20px;
+  left: 0;
+  object-fit: cover;
+}
+
+.test .email {
+  position: absolute;
+  width: 529px;
+  height: 80px;
+  top: 85px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  color: #4e4e4e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.test .text-wrapper {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  top: 45px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #4e4e4e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.test .previous-next-page {
+  position: absolute;
+  width: 82px;
+  height: 41px;
+  top: 3026px;
+  left: 683px;
+}
+
+.test .next-page {
+  position: absolute;
+  width: 31px;
+  height: 36px;
+  top: 3px;
+  left: 51px;
+}
+
+.test .previous-page {
+  position: absolute;
+  width: 31px;
+  height: 36px;
+  top: 3px;
+  left: 0;
+}
+
+.test .question {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 2623px;
+  left: 337px;
+}
+
+.test .ellipse {
+  top: 105px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test .div {
+  top: 70px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test .ellipse-2 {
+  top: 35px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test .ellipse-3 {
+  top: 0;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test .p {
+  position: absolute;
+  width: 733px;
+  top: 105px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test .text-wrapper-2 {
+  position: absolute;
+  width: 733px;
+  top: 70px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test .text-wrapper-3 {
+  position: absolute;
+  width: 733px;
+  top: 35px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test .text-wrapper-4 {
+  position: absolute;
+  width: 733px;
+  top: 0;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test .question-2 {
+  position: absolute;
+  width: 782px;
+  height: 149px;
+  top: 2279px;
+  left: 337px;
+}
+
+.test .ellipse-4 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 126px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test .text-wrapper-5 {
+  position: absolute;
+  width: 733px;
+  top: 126px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test .question-3 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1956px;
+  left: 337px;
+}
+
+.test .question-4 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1633px;
+  left: 337px;
+}
+
+.test .question-5 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1310px;
+  left: 337px;
+}
+
+.test .question-6 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 987px;
+  left: 337px;
+}
+
+.test .question-7 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 664px;
+  left: 337px;
+}
+
+.test .question-8 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 341px;
+  left: 337px;
+}
+
+.test .header {
+  position: absolute;
+  width: 1448px;
+  height: 154px;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,289 @@
+.test-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.test-page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1448px;
+  height: 3355px;
+  position: relative;
+}
+
+.test-page .footer {
+  position: absolute;
+  width: 1452px;
+  height: 205px;
+  top: 3150px;
+  left: 0;
+  background-color: transparent;
+}
+
+.test-page .overlap-group {
+  position: relative;
+  width: 1448px;
+  height: 205px;
+  background-color: #b2c1a6;
+}
+
+.test-page .line {
+  position: absolute;
+  width: 1448px;
+  height: 1px;
+  top: 20px;
+  left: 0;
+  object-fit: cover;
+}
+
+.test-page .email {
+  position: absolute;
+  width: 529px;
+  height: 80px;
+  top: 85px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  color: #4e4e4e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.test-page .text-wrapper {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  top: 45px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #4e4e4e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.test-page .previous-next-page {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 3026px;
+  left: 724px;
+}
+
+.test-page .next-page {
+  position: absolute;
+  width: 31px;
+  height: 36px;
+  top: 3px;
+  left: 10px;
+}
+
+.test-page .question {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 2803px;
+  left: 337px;
+}
+
+.test-page .ellipse {
+  top: 105px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test-page .ellipse-2 {
+  top: 70px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test-page .ellipse-3 {
+  top: 35px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test-page .ellipse-4 {
+  top: 0;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 11.5px;
+}
+
+.test-page .text-wrapper-2 {
+  position: absolute;
+  width: 733px;
+  top: 105px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test-page .p {
+  position: absolute;
+  width: 733px;
+  top: 70px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test-page .text-wrapper-3 {
+  position: absolute;
+  width: 733px;
+  top: 35px;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test-page .text-wrapper-4 {
+  position: absolute;
+  width: 733px;
+  top: 0;
+  left: 41px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.test-page .question-2 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 2480px;
+  left: 337px;
+}
+
+.test-page .question-3 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 2157px;
+  left: 337px;
+}
+
+.test-page .question-4 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1834px;
+  left: 337px;
+}
+
+.test-page .question-5 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1511px;
+  left: 337px;
+}
+
+.test-page .question-6 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 1188px;
+  left: 337px;
+}
+
+.test-page .question-7 {
+  position: absolute;
+  width: 782px;
+  height: 128px;
+  top: 865px;
+  left: 337px;
+}
+
+.test-page .overlap {
+  position: absolute;
+  width: 1450px;
+  height: 670px;
+  top: 0;
+  left: 0;
+}
+
+.test-page .beck-s-depression {
+  position: absolute;
+  width: 1449px;
+  height: 524px;
+  top: 146px;
+  left: 1px;
+}
+
+.test-page .beck-s-depression-wrapper {
+  position: relative;
+  width: 1447px;
+  height: 524px;
+  background-color: #d9d9d9;
+}
+
+.test-page .beck-s-depression-2 {
+  position: absolute;
+  width: 746px;
+  top: 175px;
+  left: 191px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.test-page .span {
+  font-weight: 900;
+}
+
+.test-page .text-wrapper-5 {
+  font-size: 24px;
+}
+
+.test-page .header {
+  position: absolute;
+  width: 1448px;
+  height: 154px;
+  top: 0;
+  left: 0;
+}
