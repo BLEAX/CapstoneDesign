@@ -43,3 +43,8 @@ a {
 .pexels-lisa-fotios {
   z-index: 0;
 }
+
+.radiobutton {
+  width: 25px;
+  height: 25px;
+}

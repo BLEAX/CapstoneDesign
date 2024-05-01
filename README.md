@@ -24,3 +24,10 @@ anima로 받아온 html페이지마다 해야할 것 :
           </div>
         </header>
        추가하고 각 페이지마다 하이퍼링크 알맞게 바꿔주기
+
+2024.05.01 메모
+
+1. radiobutton css셀렉터는 globals.css 제일 아래에 있음.
+2. css속성으로 라디오버튼 하나만 체크되게 하고 상하좌우 중앙정렬하기
+   (안되면 tr,td를 이용해서 표 구현할건지 다시 정하기)
+3. test_page2.html의 Finish the test버튼 고치기
