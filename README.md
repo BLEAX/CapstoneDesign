@@ -15,17 +15,11 @@ anima로 받아온 html페이지마다 해야할 것 :
 <header class="header">
           <div class="header-group">
             <menu class="button-wrap">
-              <a href="#" class="button">HOME</a>
-              <a href="../test_page1/test_page1.html" class="button">TEST</a>
-              <a href="../result_page/result_page.html" class="button"
-                >RESULT</a
-              >
-              <a href="../community_page/community_page.html" class="button"
-                >COMMUNITY</a
-              >
-              <a href="../others_page/others_page.html" class="button"
-                >OTHERS</a
-              >
+              <a href="/" class="button">HOME</a>
+              <a href="test_select" class="button">TEST</a>
+              <a href="result" class="button">RESULT</a>
+              <a href="community" class="button">COMMUNITY</a>
+              <a href="others" class="button">OTHERS</a>
             </menu>
           </div>
         </header>
