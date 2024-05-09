@@ -11,11 +11,11 @@
         <header class="header">
           <div class="header-group">
             <menu class="button-wrap">
-              <a href="/" class="button">HOME</a>
-              <a href="test_select" class="button">TEST</a>
-              <a href="result" class="button">RESULT</a>
-              <a href="community" class="button">COMMUNITY</a>
-              <a href="others" class="button">OTHERS</a>
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
             </menu>
           </div>
         </header>
@@ -28,100 +28,141 @@
             <div class="text-wrapper">CONTACT US</div>
           </div>
         </footer>
+        <!--다음 페이지 버튼-->
         <div class="previous-next-page">
-          <a href="test1-2"
-            ><img class="next-page" src="../assets/next-page.svg"
-          /></a>
+          <a>
+            <img
+              class="next-page"
+              src="../assets/next-page.svg"
+              onclick="goToNextPage()"
+            />
+          </a>
         </div>
         <div class="question">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <div class="text-wrapper-2">I hate myself.</div>
-          <p class="p">I am disgusted with myself.</p>
-          <p class="text-wrapper-3">I am disappointed in myself.</p>
-          <p class="text-wrapper-4">I don&#39;t feel disappointed in myself.</p>
+          <div class="text-wrapper-2">
+            <input type="radio" name="option1" class="radiobutton1" value="3" />
+            I hate myself.
+          </div>
+          <p class="p">
+            <input type="radio" name="option1" class="radiobutton1" value="2" />
+            I am disgusted with myself.
+          </p>
+          <p class="text-wrapper-3">
+            <input type="radio" name="option1" class="radiobutton1" value="1" />
+            I am disappointed in myself.
+          </p>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option1" class="radiobutton1" value="0" />
+            I don&#39;t feel disappointed in myself.
+          </p>
         </div>
         <div class="question-2">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="text-wrapper-2">I feel I am being punished.</p>
-          <p class="p">I expect to be punished.</p>
-          <p class="text-wrapper-3">I feel I may be punished.</p>
-          <p class="text-wrapper-4">I don&#39;t feel I am being punished.</p>
+          <p class="text-wrapper-2">
+            <input type="radio" name="option2" class="radiobutton1" value="3" />
+            I feel I am being punished.
+          </p>
+          <p class="p">
+            <input type="radio" name="option2" class="radiobutton1" value="2" />
+            I expect to be punished.
+          </p>
+          <p class="text-wrapper-3">
+            <input type="radio" name="option2" class="radiobutton1" value="1" />
+            I feel I may be punished.
+          </p>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option2" class="radiobutton1" value="0" />
+            I don&#39;t feel I am being punished.
+          </p>
         </div>
         <div class="question-3">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="text-wrapper-2">I feel guilty all of the time.</p>
-          <p class="p">I feel quite guilty most of the time.</p>
-          <p class="text-wrapper-3">I feel guilty a good part of the time.</p>
-          <p class="text-wrapper-4">I don&#39;t feel particularly guilty.</p>
+          <p class="text-wrapper-2">
+            <input type="radio" name="option3" class="radiobutton1" value="3" />
+            I feel guilty all of the time.
+          </p>
+          <p class="p">
+            <input type="radio" name="option3" class="radiobutton1" value="2" />
+            I feel quite guilty most of the time.
+          </p>
+          <p class="text-wrapper-3">
+            <input type="radio" name="option3" class="radiobutton1" value="1" />
+            I feel guilty a good part of the time.
+          </p>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option3" class="radiobutton1" value="0" />
+            I don&#39;t feel particularly guilty.
+          </p>
         </div>
         <div class="question-4">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="text-wrapper-2">
+            <input type="radio" name="option4" class="radiobutton1" value="3" />
             I am dissatisfied or bored with everything.
           </p>
           <p class="p">
+            <input type="radio" name="option4" class="radiobutton1" value="2" />
             I don&#39;t get real satisfaction out of anything anymore.
           </p>
           <p class="text-wrapper-3">
+            <input type="radio" name="option4" class="radiobutton1" value="1" />
             I don&#39;t enjoy things the way I used to.
           </p>
           <p class="text-wrapper-4">
+            <input type="radio" name="option4" class="radiobutton1" value="0" />
             I get as much satisfaction out of things as I used to.
           </p>
         </div>
         <div class="question-5">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="text-wrapper-2">
+            <input type="radio" name="option5" class="radiobutton1" value="3" />
             I feel I am a complete failure as a person.
           </p>
           <p class="p">
+            <input type="radio" name="option5" class="radiobutton1" value="2" />
             As I look back on my life, all I can see is a lot of failures.
           </p>
           <p class="text-wrapper-3">
+            <input type="radio" name="option5" class="radiobutton1" value="1" />
             I feel I have failed more than the average person.
           </p>
-          <p class="text-wrapper-4">I do not feel like a failure.</p>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option5" class="radiobutton1" value="0" />
+            I do not feel like a failure.
+          </p>
         </div>
         <div class="question-6">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="text-wrapper-2">
+            <input type="radio" name="option6" class="radiobutton1" value="3" />
             I feel the future is hopeless and that things cannot improve.
           </p>
-          <p class="p">I feel I have nothing to look forward to.</p>
-          <p class="text-wrapper-3">I feel discouraged about the future.</p>
+          <p class="p">
+            <input type="radio" name="option6" class="radiobutton1" value="2" />
+            I feel I have nothing to look forward to.
+          </p>
+          <p class="text-wrapper-3">
+            <input type="radio" name="option6" class="radiobutton1" value="1" />
+            I feel discouraged about the future.
+          </p>
           <p class="text-wrapper-4">
+            <input type="radio" name="option6" class="radiobutton1" value="0" />
             I am not particularly discouraged about the future.
           </p>
         </div>
         <div class="question-7">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="text-wrapper-2">
+            <input type="radio" name="option7" class="radiobutton1" value="3" />
             I am so sad and unhappy that I can’t stand it.
           </p>
-          <p class="p">I am sad all the time and I can’t snap out of it.</p>
-          <div class="text-wrapper-3">I feel sad.</div>
-          <p class="text-wrapper-4">I do not feel sad.</p>
+          <p class="p">
+            <input type="radio" name="option7" class="radiobutton1" value="2" />
+            I am sad all the time and I can’t snap out of it.
+          </p>
+          <div class="text-wrapper-3">
+            <input type="radio" name="option7" class="radiobutton1" value="1" />
+            I feel sad.
+          </div>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option7" class="radiobutton1" value="0" />
+            I do not feel sad.
+          </p>
         </div>
         <div class="overlap">
           <div class="beck-s-depression">
@@ -138,5 +179,65 @@
         </div>
       </div>
     </div>
+    <script>
+      function goToNextPage() {
+        var selectedRadio1 = document.querySelector(
+          'input[name="option1"]:checked'
+        );
+
+        var selectedRadio2 = document.querySelector(
+          'input[name="option2"]:checked'
+        );
+
+        var selectedRadio3 = document.querySelector(
+          'input[name="option3"]:checked'
+        );
+
+        var selectedRadio4 = document.querySelector(
+          'input[name="option4"]:checked'
+        );
+
+        var selectedRadio5 = document.querySelector(
+          'input[name="option5"]:checked'
+        );
+
+        var selectedRadio6 = document.querySelector(
+          'input[name="option6"]:checked'
+        );
+
+        var selectedRadio7 = document.querySelector(
+          'input[name="option7"]:checked'
+        );
+
+        let selectedValueSum = 0;
+        if (
+          (selectedRadio1,
+          selectedRadio2,
+          selectedRadio3,
+          selectedRadio4,
+          selectedRadio5,
+          selectedRadio6,
+          selectedRadio7)
+        ) {
+          var selectedValue = [
+            selectedRadio1.value,
+            selectedRadio2.value,
+            selectedRadio3.value,
+            selectedRadio4.value,
+            selectedRadio5.value,
+            selectedRadio6.value,
+            selectedRadio7.value,
+          ];
+
+          for (i = 0; i < selectedValue.length; i++) {
+            selectedValueSum += parseInt(selectedValue[i]);
+          }
+          localStorage.setItem("page1Value", selectedValueSum); //찾아보기
+          window.location.href = "test1-2";
+        } else {
+          alert("Please select an option before proceeding.");
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/result_page1.css" />
+  </head>
+  <body>
+    <div class="result">
+      <div class="result-page">
+        <header class="header">
+          <div class="header-group">
+            <menu class="button-wrap">
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
+            </menu>
+          </div>
+        </header>
+        <footer class="footer">
+          <div class="overlap-group">
+            <img class="line" src="../assets/line-1.svg" />
+            <p class="email">
+              Email : rlawjdgns135@naver.com<br />Tel : 010-5141-9809
+            </p>
+            <div class="text-wrapper">CONTACT US</div>
+          </div>
+        </footer>
+        <div class="scoring">
+          <p class="INTERPRETING-THE">
+            <span class="span">INTERPRETING THE BECK DEPRESSION INVENTORY</span>
+            <span class="text-wrapper-2">
+              <br /><br />Now that you have completed the questionnaire, add up
+              the score for each of the twenty-one questions by counting the
+              number to the right of each question you marked. <br />The highest
+              possible total for the whole test would be sixty-three. <br />This
+              would mean you circled number three on all twenty-one questions.
+              <br />Since the lowest possible score for each question is zero,
+              the lowest possible score for the test would be zero. <br />This
+              would mean you circles zero on each question. <br />You can
+              evaluate your depression according to the Table below. <br /><br
+            /></span>
+            <span class="text-wrapper-3" id="total_score"
+              ><br />Your Total Score :&nbsp;&nbsp;</span
+            >
+            <span class="text-wrapper-2"> <br /><br /></span>
+            <span class="text-wrapper-4" id="depression_level"
+              >Levels of Depression :&nbsp;&nbsp;<br
+            /></span>
+            <span class="text-wrapper-2"><br /><br /></span>
+            <span class="text-wrapper-5">Other Levels</span>
+            <span class="text-wrapper-2"> :<br /></span>
+            <span class="text-wrapper-5"><br /></span>
+            <span class="text-wrapper-2"
+              >1-10 : These ups and downs are considered normal <br />11-16 :
+              Mild mood disturbance <br />17-20 : Borderline clinical depression
+              <br />21-30 : Moderate depression <br />31-40 : Severe depression
+              <br />over 40 : Extreme depression</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function calculateTotal() {
+        var page1Value = parseInt(localStorage.getItem("page1Value"));
+        var page2Value = parseInt(localStorage.getItem("page2Value"));
+        var page3Value = parseInt(localStorage.getItem("page3Value"));
+        var total = page1Value + page2Value + page3Value;
+
+        document.getElementById("total_score").innerHTML =
+          "Your Total Score :  " + total;
+
+        switch (total) {
+          case total > 40:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  Extreme depression";
+            break;
+          case total > 30:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  Severe depression";
+            break;
+          case total > 20:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  Moderate depression";
+            break;
+          case total > 16:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  Borderline clinical depression";
+            break;
+          case total > 10:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  Mild mood disturbance";
+            break;
+          default:
+            document.getElementById("depression_level").innerHTML =
+              "Levels of Depression :  These ups and downs are considered normal";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

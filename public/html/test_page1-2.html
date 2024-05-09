@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/globals.css" />
     <link rel="stylesheet" href="../css/test_page1-2.css" />
+    <script src="../js/test1.js"></script>
   </head>
   <body>
     <div class="test">
@@ -11,154 +12,369 @@
         <header class="header">
           <div class="header-group">
             <menu class="button-wrap">
-              <a href="/" class="button">HOME</a>
-              <a href="test_select" class="button">TEST</a>
-              <a href="result" class="button">RESULT</a>
-              <a href="community" class="button">COMMUNITY</a>
-              <a href="others" class="button">OTHERS</a>
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
             </menu>
           </div>
         </header>
         <footer class="footer">
           <div class="overlap-group">
-            <img class="line" src="img/line-1.svg" />
+            <img class="line" src="../assets/line-1.svg" />
             <p class="email">
               Email : rlawjdgns135@naver.com<br />Tel : 010-5141-9809
             </p>
             <div class="text-wrapper">CONTACT US</div>
           </div>
         </footer>
+
+        <!--다음, 이전 페이지 버튼-->
         <div class="previous-next-page">
-          <a href="test1-3"
-            ><img class="next-page" src="../assets/next-page.svg"
-          /></a>
+          <p>
+            <img
+              class="next-page"
+              src="../assets/next-page.svg"
+              onclick="goToNextPage()"
+            />
+          </p>
           <a href="test1-1"
             ><img class="previous-page" src="../assets/previous-page.svg"
           /></a>
         </div>
         <div class="question">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I can&#39;t do any work at all.</p>
+          <p class="p">
+            <input type="radio" name="option8" class="radiobutton1" value="3" />
+            I can&#39;t do any work at all.
+          </p>
           <p class="text-wrapper-2">
+            <input type="radio" name="option8" class="radiobutton1" value="2" />
             I have to push myself very hard to do anything.
           </p>
           <p class="text-wrapper-3">
+            <input type="radio" name="option8" class="radiobutton1" value="1" />
             It takes an extra effort to get started at doing something.
           </p>
-          <p class="text-wrapper-4">I can work about as well as before.</p>
+          <p class="text-wrapper-4">
+            <input type="radio" name="option8" class="radiobutton1" value="0" />
+            I can work about as well as before.
+          </p>
         </div>
         <div class="question-2">
-          <div class="ellipse-4"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="text-wrapper-5">I believe that I look ugly.</p>
+          <p class="text-wrapper-5">
+            <input type="radio" name="option9" class="radiobutton1" value="3" />
+            I believe that I look ugly.
+          </p>
           <p class="text-wrapper-2">
+            <input type="radio" name="option9" class="radiobutton1" value="2" />
             I feel there are permanent changes in my appearance that make me
-            look <br />unattractive
+            look <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unattractive
           </p>
           <p class="text-wrapper-3">
+            <input type="radio" name="option9" class="radiobutton1" value="1" />
             I am worried that I am looking old or unattractive.
           </p>
           <p class="text-wrapper-4">
+            <input type="radio" name="option9" class="radiobutton1" value="0" />
             I don&#39;t feel that I look any worse than I used to.
           </p>
         </div>
         <div class="question-3">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I can&#39;t make decisions at all anymore.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option10"
+              class="radiobutton1"
+              value="3"
+            />
+            I can&#39;t make decisions at all anymore.
+          </p>
           <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option10"
+              class="radiobutton1"
+              value="2"
+            />
             I have greater difficulty in making decisions more than I used to.
           </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option10"
+              class="radiobutton1"
+              value="1"
+            />
             I put off making decisions more than I used to.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option10"
+              class="radiobutton1"
+              value="0"
+            />
             I make decisions about as well as I ever could.
           </p>
         </div>
         <div class="question-4">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I have lost all of my interest in other people.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option11"
+              class="radiobutton1"
+              value="3"
+            />&nbsp;I have lost all of my interest in other people.
+          </p>
           <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option11"
+              class="radiobutton1"
+              value="2"
+            />
             I have lost most of my interest in other people.
           </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option11"
+              class="radiobutton1"
+              value="1"
+            />
             I am less interested in other people than I used to be.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option11"
+              class="radiobutton1"
+              value="0"
+            />
             I have not lost interest in other people.
           </p>
         </div>
         <div class="question-5">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I feel irritated all the time.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option12"
+              class="radiobutton1"
+              value="3"
+            />
+            I feel irritated all the time.
+          </p>
           <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option12"
+              class="radiobutton1"
+              value="2"
+            />
             I am quite annoyed or irritated a good deal of the time.
           </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option12"
+              class="radiobutton1"
+              value="1"
+            />
             I am slightly more irritated now than usual.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option12"
+              class="radiobutton1"
+              value="0"
+            />
             I am no more irritated by things than I ever was.
           </p>
         </div>
         <div class="question-6">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
           <p class="p">
+            <input
+              type="radio"
+              name="option13"
+              class="radiobutton1"
+              value="3"
+            />
             I used to be able to cry, but now I can&#39;t cry even though I want
             to.
           </p>
-          <p class="text-wrapper-2">I cry all the time now.</p>
-          <p class="text-wrapper-3">I cry more now than I used to.</p>
-          <p class="text-wrapper-4">I don&#39;t cry any more than usual.</p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option13"
+              class="radiobutton1"
+              value="2"
+            />
+            I cry all the time now.
+          </p>
+          <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option13"
+              class="radiobutton1"
+              value="1"
+            />
+            I cry more now than I used to.
+          </p>
+          <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option13"
+              class="radiobutton1"
+              value="0"
+            />
+            I don&#39;t cry any more than usual.
+          </p>
         </div>
         <div class="question-7">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I would kill myself if I had the chance.</p>
-          <p class="text-wrapper-2">I would like to kill myself.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option14"
+              class="radiobutton1"
+              value="3"
+            />
+            I would kill myself if I had the chance.
+          </p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option14"
+              class="radiobutton1"
+              value="2"
+            />
+            I would like to kill myself.
+          </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option14"
+              class="radiobutton1"
+              value="1"
+            />
             I have thoughts of killing myself, but I would not carry them out.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option14"
+              class="radiobutton1"
+              value="0"
+            />
             I don&#39;t have any thoughts of killing myself.
           </p>
         </div>
         <div class="question-8">
-          <div class="ellipse"></div>
-          <div class="div"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <p class="p">I blame myself for everything bad that happens.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option15"
+              class="radiobutton1"
+              value="3"
+            />
+            I blame myself for everything bad that happens.
+          </p>
           <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option15"
+              class="radiobutton1"
+              value="2"
+            />
             I blame myself all the time for my faults.
           </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option15"
+              class="radiobutton1"
+              value="1"
+            />
             I am critical of myself for my weaknesses or mistakes.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option15"
+              class="radiobutton1"
+              value="0"
+            />
             I don&#39;t feel I am any worse than anybody else.
           </p>
         </div>
       </div>
     </div>
+    <script>
+      function goToNextPage() {
+        var selectedRadio8 = document.querySelector(
+          'input[name="option8"]:checked'
+        );
+
+        var selectedRadio9 = document.querySelector(
+          'input[name="option9"]:checked'
+        );
+
+        var selectedRadio10 = document.querySelector(
+          'input[name="option10"]:checked'
+        );
+
+        var selectedRadio11 = document.querySelector(
+          'input[name="option11"]:checked'
+        );
+
+        var selectedRadio12 = document.querySelector(
+          'input[name="option12"]:checked'
+        );
+
+        var selectedRadio13 = document.querySelector(
+          'input[name="option13"]:checked'
+        );
+
+        var selectedRadio14 = document.querySelector(
+          'input[name="option14"]:checked'
+        );
+
+        var selectedRadio15 = document.querySelector(
+          'input[name="option15"]:checked'
+        );
+        let selectedValueSum = 0;
+        if (
+          (selectedRadio8,
+          selectedRadio9,
+          selectedRadio10,
+          selectedRadio11,
+          selectedRadio12,
+          selectedRadio13,
+          selectedRadio14,
+          selectedRadio15)
+        ) {
+          var selectedValue = [
+            selectedRadio8.value,
+            selectedRadio9.value,
+            selectedRadio10.value,
+            selectedRadio11.value,
+            selectedRadio12.value,
+            selectedRadio13.value,
+            selectedRadio14.value,
+            selectedRadio15.value,
+          ];
+
+          for (i = 0; i < selectedValue.length; i++) {
+            selectedValueSum += parseInt(selectedValue[i]);
+          }
+          localStorage.setItem("page2Value", selectedValueSum); //찾아보기
+          window.location.href = "test1-3";
+        } else {
+          alert("Please select an option before proceeding.");
+        }
+      }
+    </script>
   </body>
 </html>

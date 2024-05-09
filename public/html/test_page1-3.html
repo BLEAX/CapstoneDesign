@@ -11,11 +11,11 @@
         <header class="header">
           <div class="header-group">
             <menu class="button-wrap">
-              <a href="/" class="button">HOME</a>
-              <a href="test_select" class="button">TEST</a>
-              <a href="result" class="button">RESULT</a>
-              <a href="community" class="button">COMMUNITY</a>
-              <a href="others" class="button">OTHERS</a>
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
             </menu>
           </div>
         </header>
@@ -33,103 +33,307 @@
             ><img class="previous-page" src="../assets/previous-page.svg"
           /></a>
         </div>
+        <!--검사 마침 버튼-->
         <div class="finish-button">
-          <a href="result1">
-            <img
-              class="finish-button-rectangle"
-              src="../assets/rectangle-2-1.svg"
-            />
-            <div class="overlap">
-              <div class="div">Finish the test</div>
+          <img
+            class="finish-button-rectangle"
+            src="../assets/rectangle-2-1.svg"
+            onclick="goToNextPage()"
+          />
+          <div class="overlap">
+            <div class="div">
+              <u>Finish the test</u>
             </div>
-          </a>
+          </div>
         </div>
         <div class="question">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="p">I have lost interest in sex completely.</p>
-          <p class="text-wrapper-2">I have almost no interest in sex.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option16"
+              class="radiobutton1"
+              value="3"
+            />
+            I have lost interest in sex completely.
+          </p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option16"
+              class="radiobutton1"
+              value="2"
+            />
+            I have almost no interest in sex.
+          </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option16"
+              class="radiobutton1"
+              value="1"
+            />
             I am less interested in sex than I used to be.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option16"
+              class="radiobutton1"
+              value="0"
+            />
             I have not noticed any recent change in my interest in sex.
           </p>
         </div>
         <div class="question-2">
-          <div class="ellipse-5"></div>
-          <div class="ellipse-6"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="text-wrapper-5">
+            <input
+              type="radio"
+              name="option17"
+              class="radiobutton1"
+              value="3"
+            />
             I am so worried about my physical problems that I cannot think of
             anything else.
           </p>
           <p class="i-am-very-worried">
+            <input
+              type="radio"
+              name="option17"
+              class="radiobutton1"
+              value="2"
+            />
             I am very worried about physical problems and it&#39;s hard to think
             of much else.
           </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option17"
+              class="radiobutton1"
+              value="1"
+            />
             I am worried about physical problems like aches, pains, upset
             stomach, or constipation.
           </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option17"
+              class="radiobutton1"
+              value="0"
+            />
             I am no more worried about my health than usual.
           </p>
         </div>
         <div class="question-3">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="p">I have lost more than fifteen pounds.</p>
-          <p class="text-wrapper-2">I have lost more than ten pounds.</p>
-          <p class="text-wrapper-3">I have lost more than five pounds.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option18"
+              class="radiobutton1"
+              value="3"
+            />
+            I have lost more than fifteen pounds.
+          </p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option18"
+              class="radiobutton1"
+              value="2"
+            />
+            I have lost more than ten pounds.
+          </p>
+          <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option18"
+              class="radiobutton1"
+              value="1"
+            />
+            I have lost more than five pounds.
+          </p>
           <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option18"
+              class="radiobutton1"
+              value="0"
+            />
             I haven&#39;t lost much weight, if any, lately.
           </p>
         </div>
         <div class="question-4">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="p">I have no appetite at all anymore.</p>
-          <p class="text-wrapper-2">My appetite is much worse now.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option19"
+              class="radiobutton1"
+              value="3"
+            />
+            I have no appetite at all anymore.
+          </p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option19"
+              class="radiobutton1"
+              value="2"
+            />
+            My appetite is much worse now.
+          </p>
           <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option19"
+              class="radiobutton1"
+              value="1"
+            />
             My appetite is not as good as it used to be.
           </p>
-          <p class="text-wrapper-4">My appetite is no worse than usual.</p>
+          <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option19"
+              class="radiobutton1"
+              value="0"
+            />
+            My appetite is no worse than usual.
+          </p>
         </div>
         <div class="question-5">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <p class="p">I am too tired to do anything.</p>
-          <p class="text-wrapper-2">I get tired from doing almost anything.</p>
-          <p class="text-wrapper-3">I get tired more easily than I used to.</p>
-          <p class="text-wrapper-4">I don&#39;t get more tired than usual.</p>
+          <p class="p">
+            <input
+              type="radio"
+              name="option20"
+              class="radiobutton1"
+              value="3"
+            />
+            I am too tired to do anything.
+          </p>
+          <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option20"
+              class="radiobutton1"
+              value="2"
+            />
+            I get tired from doing almost anything.
+          </p>
+          <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option20"
+              class="radiobutton1"
+              value="1"
+            />
+            I get tired more easily than I used to.
+          </p>
+          <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option20"
+              class="radiobutton1"
+              value="0"
+            />
+            I don&#39;t get more tired than usual.
+          </p>
         </div>
         <div class="question-6">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
           <p class="p">
+            <input
+              type="radio"
+              name="option21"
+              class="radiobutton1"
+              value="3"
+            />
             I wake up several hours earlier than I used to and cannot get back
             to sleep.
           </p>
           <p class="text-wrapper-2">
+            <input
+              type="radio"
+              name="option21"
+              class="radiobutton1"
+              value="2"
+            />
             I wake up 1-2 hours earlier than usual and find it hard to get back
             to sleep.
           </p>
-          <p class="text-wrapper-3">I don&#39;t sleep as well as I used to.</p>
-          <p class="text-wrapper-4">I can sleep as well as usual.</p>
+          <p class="text-wrapper-3">
+            <input
+              type="radio"
+              name="option21"
+              class="radiobutton1"
+              value="1"
+            />
+            I don&#39;t sleep as well as I used to.
+          </p>
+          <p class="text-wrapper-4">
+            <input
+              type="radio"
+              name="option21"
+              class="radiobutton1"
+              value="0"
+            />
+            I can sleep as well as usual.
+          </p>
         </div>
       </div>
     </div>
+    <script>
+      function goToNextPage() {
+        var selectedRadio16 = document.querySelector(
+          'input[name="option16"]:checked'
+        );
+
+        var selectedRadio17 = document.querySelector(
+          'input[name="option17"]:checked'
+        );
+
+        var selectedRadio18 = document.querySelector(
+          'input[name="option18"]:checked'
+        );
+
+        var selectedRadio19 = document.querySelector(
+          'input[name="option19"]:checked'
+        );
+
+        var selectedRadio20 = document.querySelector(
+          'input[name="option20"]:checked'
+        );
+
+        var selectedRadio21 = document.querySelector(
+          'input[name="option21"]:checked'
+        );
+
+        let selectedValueSum = 0;
+        if (
+          (selectedRadio16,
+          selectedRadio17,
+          selectedRadio18,
+          selectedRadio19,
+          selectedRadio20,
+          selectedRadio21)
+        ) {
+          var selectedValue = [
+            selectedRadio16.value,
+            selectedRadio17.value,
+            selectedRadio18.value,
+            selectedRadio19.value,
+            selectedRadio20.value,
+            selectedRadio21.value,
+          ];
+
+          for (i = 0; i < selectedValue.length; i++) {
+            selectedValueSum += parseInt(selectedValue[i]);
+          }
+          localStorage.setItem("page3Value", selectedValueSum); //찾아보기
+          window.location.href = "result1";
+        } else {
+          alert("Please select an option before proceeding.");
+        }
+      }
+    </script>
   </body>
 </html>

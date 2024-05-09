@@ -82,6 +82,7 @@
   height: 36px;
   top: 3px;
   left: 10px;
+  cursor: pointer;
 }
 
 .test-page .question {
@@ -90,46 +91,6 @@
   height: 128px;
   top: 2803px;
   left: 337px;
-}
-
-.test-page .ellipse {
-  top: 105px;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 0;
-  background-color: #d9d9d9;
-  border-radius: 11.5px;
-}
-
-.test-page .ellipse-2 {
-  top: 70px;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 0;
-  background-color: #d9d9d9;
-  border-radius: 11.5px;
-}
-
-.test-page .ellipse-3 {
-  top: 35px;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 0;
-  background-color: #d9d9d9;
-  border-radius: 11.5px;
-}
-
-.test-page .ellipse-4 {
-  top: 0;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 0;
-  background-color: #d9d9d9;
-  border-radius: 11.5px;
 }
 
 .test-page .text-wrapper-2 {
@@ -286,4 +247,9 @@
   height: 154px;
   top: 0;
   left: 0;
+}
+
+.radiobutton1 {
+  width: 15px;
+  height: 15px;
 }

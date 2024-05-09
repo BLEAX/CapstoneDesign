@@ -82,6 +82,7 @@
   height: 36px;
   top: 3px;
   left: 51px;
+  cursor: pointer;
 }
 
 .test .previous-page {
@@ -282,4 +283,9 @@
   height: 154px;
   top: 0;
   left: 0;
+}
+
+.radiobutton1 {
+  width: 15px;
+  height: 15px;
 }

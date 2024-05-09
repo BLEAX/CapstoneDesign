@@ -1,0 +1,118 @@
+.community-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.community-page .div {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(242.91, 243.31, 223.04) 40.5%,
+    rgb(192.28, 224.19, 167.21) 100%
+  );
+  width: 1448px;
+  height: 3355px;
+  position: relative;
+}
+
+.community-page .footer {
+  position: absolute;
+  width: 1452px;
+  height: 205px;
+  top: 3150px;
+  left: 0;
+  background-color: transparent;
+}
+
+.community-page .overlap-group {
+  position: relative;
+  width: 1448px;
+  height: 205px;
+  background-color: #b2c1a6;
+}
+
+.community-page .line {
+  position: absolute;
+  width: 1448px;
+  height: 1px;
+  top: 20px;
+  left: 0;
+  object-fit: cover;
+}
+
+.community-page .email {
+  position: absolute;
+  width: 529px;
+  height: 80px;
+  top: 85px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  color: #4e4e4e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-page .text-wrapper {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  top: 45px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #4e4e4e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-page .header {
+  position: absolute;
+  width: 1448px;
+  height: 154px;
+  top: 0;
+  left: 0;
+}
+
+.community-page .div-2 {
+  position: absolute;
+  width: 1175px;
+  height: 579px;
+  top: 347px;
+  left: 139px;
+}
+
+.community-page .p {
+  position: absolute;
+  width: 1171px;
+  top: 81px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-page .text-wrapper-2 {
+  position: absolute;
+  width: 356px;
+  height: 81px;
+  top: 0;
+  left: 0;
+  font-family: "Source Serif Pro", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: normal;
+}

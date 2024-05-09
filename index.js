@@ -30,8 +30,12 @@ app.get("/test2", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "html", "test_page2.html"));
 });
 
-app.get("/result", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "html", "result_page.html"));
+app.get("/result1", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "html", "result_page1.html"));
+});
+
+app.get("/result2", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "html", "result_page2.html"));
 });
 
 app.get("/community", (req, res) => {

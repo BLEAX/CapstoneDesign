@@ -90,6 +90,7 @@
   height: 100px;
   top: 2304px;
   left: 626px;
+  cursor: pointer;
 }
 
 .test .overlap {
@@ -323,4 +324,9 @@
 .overlap {
   position: absolute;
   z-index: 1;
+}
+
+.radiobutton1 {
+  width: 15px;
+  height: 15px;
 }
