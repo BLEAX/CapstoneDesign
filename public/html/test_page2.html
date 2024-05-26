@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/test_page2.css" />
     <link rel="stylesheet" href="../css/globals.css" />
-    <script src="../js/test2.js"></script>
   </head>
   <body>
     <div class="test-page">
@@ -20,18 +19,16 @@
             </menu>
           </div>
         </header>
-        <div class="finish-button">
-          <a href="result2" onClick="calculateTotal2()">
-            <img
-              class="finish-button-rectangle"
-              src="../assets/rectangle-2-1.svg"
-            />
-            <div class="overlap">
-              <div class="div">
-                <u>Finish the test</u>
-              </div>
+        <div class="finish-button" onclick="calculateTotal2()">
+          <img
+            class="finish-button-rectangle"
+            src="../assets/rectangle-2-1.svg"
+          />
+          <div class="overlap">
+            <div class="div">
+              <u>Finish the test</u>
             </div>
-          </a>
+          </div>
         </div>
         <footer class="footer">
           <div class="overlap-group">
@@ -304,5 +301,10 @@
         </div>
       </div>
     </div>
+    <script>
+      function calculateTotal2() {
+        window.location.href = "result2";
+      }
+    </script>
   </body>
 </html>

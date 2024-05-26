@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimSol register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="../js/register.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white; /* 배경 전체 색 */
+      }
+      .background-container {
+        width: 75%; /* 원하는 너비 */
+        height: 100%; /* 원하는 높이 */
+        background-color: #c0e0a7; /* 배경색 지정 */
+      }
+      .form-control {
+        border: 1px solid #000; /* 검은색 외곽선, 두께 2px */
+      }
+      .form-control:focus {
+        border: 2px solid #3498db; /* 포커스 시 파란색 외곽선 */
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* 포커스 시 외곽선의 그림자 효과 */
+      }
+      #floatingPassword:focus,
+      #floatingPasswordCheck:focus {
+        border: 2px solid #e94e39;
+        box-shadow: 0 0 10px rgba(230, 26, 26, 0.5); /* 포커스 시 외곽선의 그림자 효과 */
+      }
+      #pwConfirm {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="container-fluid">
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <img src="../assets/Simsol logo3.png" alt width="450" height="450" />
+          <br />
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingName"
+              placeholder="Name"
+            />
+            <label for="floatingPassword">Name</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+              oninput="password_check(event)"
+            />
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPasswordCheck"
+              placeholder="Password Check"
+              oninput="password_check(event)"
+            />
+            <label for="floatingPassword">Password Check</label>
+          </div>
+          <span id="pwConfirm"></span>
+          <br />
+          <br />
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingNickname"
+              placeholder="Nickname"
+            />
+            <label for="floatingPassword">Nickname</label>
+          </div>
+          <br />
+          <button class="btn btn-primary" type="submit" onclick="signUp(event)">
+            Register
+          </button>
+          &nbsp;&nbsp;<a href="../html/login.html" style="cursor: pointer"
+            >Go to Login Page</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

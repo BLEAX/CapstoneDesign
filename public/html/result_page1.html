@@ -47,7 +47,7 @@
             >
             <span class="text-wrapper-2"> <br /><br /></span>
             <span class="text-wrapper-4" id="depression_level"
-              >Levels of Depression :&nbsp;&nbsp;<br
+              >Your Level of Depression :&nbsp;&nbsp;<br
             /></span>
             <span class="text-wrapper-2"><br /><br /></span>
             <span class="text-wrapper-5">Other Levels</span>
@@ -64,41 +64,54 @@
       </div>
     </div>
     <script>
-      function calculateTotal() {
-        var page1Value = parseInt(localStorage.getItem("page1Value"));
-        var page2Value = parseInt(localStorage.getItem("page2Value"));
-        var page3Value = parseInt(localStorage.getItem("page3Value"));
-        var total = page1Value + page2Value + page3Value;
+      var page1Value = parseInt(localStorage.getItem("page1Value"));
+      var page2Value = parseInt(localStorage.getItem("page2Value"));
+      var page3Value = parseInt(localStorage.getItem("page3Value"));
+      var total = page1Value + page2Value + page3Value;
 
-        document.getElementById("total_score").innerHTML =
-          "Your Total Score :  " + total;
-
-        switch (total) {
-          case total > 40:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  Extreme depression";
-            break;
-          case total > 30:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  Severe depression";
-            break;
-          case total > 20:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  Moderate depression";
-            break;
-          case total > 16:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  Borderline clinical depression";
-            break;
-          case total > 10:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  Mild mood disturbance";
-            break;
-          default:
-            document.getElementById("depression_level").innerHTML =
-              "Levels of Depression :  These ups and downs are considered normal";
-            break;
-        }
+      switch (true) {
+        case total > 40:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: red;'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: red;'><u>Extreme depression</u></span>";
+          break;
+        case total > 30:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: darkorange;'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: darkorange;'><u>Severe depression</u></span>";
+          break;
+        case total > 20:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: rgb(255, 183, 0);'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: rgb(255, 183, 0);'><u>Moderate depression</u></span>";
+          break;
+        case total > 16:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: yellowgreen;'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: yellowgreen;'><u>Borderline clinical depression</u></span>";
+          break;
+        case total > 10:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: green;'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: green;'><u>Mild mood disturbance</u></span>";
+          break;
+        default:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: blue;'><u>${total}</u></span>`;
+          document.getElementById("depression_level").innerHTML =
+            "Your Level of Depression :  <span style='color: blue;'><u>These ups and downs are considered normal</u></span>";
+          break;
       }
     </script>
   </body>
