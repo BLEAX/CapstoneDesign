@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/result_page2.css" />
+  </head>
+  <body>
+    <div class="result">
+      <div class="result-page">
+        <header class="header">
+          <div class="header-group">
+            <menu class="button-wrap">
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
+            </menu>
+          </div>
+        </header>
+        <footer class="footer">
+          <div class="overlap-group">
+            <img class="line" src="../assets/line-1.svg" />
+            <p class="email">
+              Email : rlawjdgns135@naver.com<br />Tel : 010-5141-9809
+            </p>
+            <div class="text-wrapper">CONTACT US</div>
+          </div>
+        </footer>
+        <div class="scoring">
+          <p class="INTERPRETING-THE">
+            <span class="span">INTERPRETING THE BECK ANXIETY INVENTORY</span>
+            <span class="text-wrapper-2">
+              <br /><br />Now that you have completed the questionnaire, add up
+              the score for each of the twenty-three questions by counting the
+              number to the right of each question you marked. <br />The highest
+              possible total for the whole test would be sixty-nine. <br />This
+              would mean you circled number three on all twenty-one questions.
+              <br />Since the lowest possible score for each question is zero,
+              the lowest possible score for the test would be zero. <br />This
+              would mean you circles zero on each question. <br />You can
+              evaluate your anxiety according to the Table below. <br /><br
+            /></span>
+            <span class="text-wrapper-3" id="total_score"
+              ><br />Your Total Score :&nbsp;&nbsp;</span
+            >
+            <span class="text-wrapper-2"> <br /><br /></span>
+            <span class="text-wrapper-4" id="anxiety_level"
+              >Your Level of Anxiety :&nbsp;&nbsp;<br
+            /></span>
+            <span class="text-wrapper-2"><br /><br /></span>
+            <span class="text-wrapper-5">Other Levels</span>
+            <span class="text-wrapper-2"> :<br /></span>
+            <span class="text-wrapper-5"><br /></span>
+            <span class="text-wrapper-2"
+              >0-21 : Normal <br />22-26 : Mild<br />27-31 : Moderate<br />Over
+              32 : Severe</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var total = parseInt(localStorage.getItem("test2_value"));
+
+      switch (true) {
+        case total > 31:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: red;'><u>${total}</u></span>`;
+          document.getElementById("anxiety_level").innerHTML =
+            "Your Level of Anxiety :  <span style='color: red;'><u>Severe</u></span>";
+          break;
+        case total > 26:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: darkorange;'><u>${total}</u></span>`;
+          document.getElementById("anxiety_level").innerHTML =
+            "Your Level of Anxiety :  <span style='color: darkorange;'><u>Moderate</u></span>";
+          break;
+        case total > 21:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: green;'><u>${total}</u></span>`;
+          document.getElementById("anxiety_level").innerHTML =
+            "Your Level of Anxiety :  <span style='color: green;'><u>Mild</u></span>";
+          break;
+        default:
+          document.getElementById("total_score").innerHTML =
+            "Your Total Score :  " +
+            `<span style='color: blue;'><u>${total}</u></span>`;
+          document.getElementById("anxiety_level").innerHTML =
+            "Your Level of Anxiety :  <span style='color: blue;'><u>Normal</u></span>";
+          break;
+      }
+    </script>
+  </body>
+</html>

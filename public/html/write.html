@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/write.css" />
+    <title>share your symptom</title>
+  </head>
+  <body>
+    <div class="write-page">
+      <div class="div">
+        <header class="header">
+          <div class="header-group">
+            <menu class="button-wrap">
+              <a href="/" class="button"><u>HOME</u></a>
+              <a href="test_select" class="button"><u>TEST</u></a>
+              <a href="result" class="button"><u>RESULT</u></a>
+              <a href="community" class="button"><u>COMMUNITY</u></a>
+              <a href="others" class="button"><u>OTHERS</u></a>
+            </menu>
+          </div>
+        </header>
+        <br />
+        <main>
+          <form id="postForm" action="/submit_post" method="post">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="content">Description</label>
+              <textarea
+                id="content"
+                name="content"
+                placeholder="description"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="done">done</button>
+              <button type="button" class="cancel" onclick="goToCommunity()">
+                cancel
+              </button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+    <script>
+      function goToCommunity() {
+        document.getElementById("postForm").reset();
+        let result = confirm("go back to community page?");
+        if (result) {
+          window.location.href = "/community";
+        } else {
+          return;
+        }
+      }
+    </script>
+    <script type="module" src="../js/write.js"></script>
+  </body>
+</html>

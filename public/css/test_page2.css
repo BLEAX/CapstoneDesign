@@ -1325,7 +1325,7 @@
   position: absolute;
   width: 198px;
   height: 100px;
-  top: 2731px;
+  top: 2531px;
   left: 626px;
   cursor: pointer;
 }
@@ -1338,17 +1338,9 @@
   background-size: 100% 100%;
 }
 
-.test-page .text-wrapper-6 {
-  position: absolute;
-  width: 151px;
-  height: 36px;
-  top: 32px;
-  left: 22px;
-  font-family: "Roboto", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 24px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+.test-page .radiobutton {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  margin-left: 130px;
 }

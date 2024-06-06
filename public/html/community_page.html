@@ -19,6 +19,13 @@
             </menu>
           </div>
         </header>
+        <div class="div-2">
+          <div class="text-wrapper-2">COMMUNITY PAGE</div>
+        </div>
+        <!--글 목록-->
+        <h1>Community Posts</h1>
+        <ul id="postList"></ul>
+        <a href="/write"><button class="write-button">create</button></a>
         <footer class="footer">
           <div class="overlap-group">
             <img class="line" src="../assets/line-1.svg" />
@@ -28,14 +35,25 @@
             <div class="text-wrapper">CONTACT US</div>
           </div>
         </footer>
-        <div class="div-2">
-          <p class="p">
-            Sharing your condition with others can be great psychological help.
-          </p>
-          <div class="text-wrapper-2">COMMUNITY PAGE</div>
-        </div>
       </div>
     </div>
-    <script src="../js/community.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/posts")
+          .then((response) => response.json())
+          .then((posts) => {
+            const postList = document.getElementById("postList");
+            posts.forEach((post) => {
+              const listItem = document.createElement("li");
+              const link = document.createElement("a");
+              link.textContent = post.title;
+              link.href = `/post/${post.id}`; // 예를 들어, 각 글은 고유한 id를 가지고 있다고 가정합니다.
+              listItem.appendChild(link);
+              postList.appendChild(listItem);
+            });
+          })
+          .catch((error) => console.error("Error fetching posts:", error));
+      });
+    </script>
   </body>
 </html>

@@ -22,8 +22,8 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 const auth = getAuth(app);
+const db = getFirestore(app);
 
 // 비밀번호 일치 여부 검사
 window.password_check = function (e) {
@@ -31,7 +31,6 @@ window.password_check = function (e) {
   var pw2 = document.getElementById("floatingPasswordCheck").value;
 
   if (pw2 == "") {
-    z;
     document.getElementById("pwConfirm").innerText = "";
   } else if (pw1 == pw2) {
     document.getElementById("pwConfirm").innerText = "";
@@ -45,36 +44,42 @@ window.password_check = function (e) {
 window.signUp = function (e) {
   e.preventDefault();
 
-  var name = document.getElementById("exampleFormControlInput1").value;
+  var name = document.getElementById("floatingName").value;
   var email = document.getElementById("floatingInput").value;
-  var password = document.getElementById("floatingPasswordCheck").value;
+  var password = document.getElementById("floatingPassword").value;
+  var nickname = document.getElementById("floatingNickname").value;
 
   if (
     validate_email(email) == false ||
     validate_field(name) == false ||
-    password_check() == false
+    password_check() == false ||
+    nickname == ""
   ) {
-    alert("다시 확인하세요.");
+    alert("이메일이나 비밀번호가 잘못되었습니다.");
   } else {
     alert("회원가입이 완료되었습니다.");
     createUserWithEmailAndPassword(auth, email, password)
       .then(async (userCredential) => {
         const user = userCredential.user;
+        //여기까지는 잘 됨.
 
         await setDoc(doc(db, "users", user.uid), {
           name: name,
           email: email,
-          personal_color: null,
-          skin_type: null,
-          skin_concern: null,
-          recommend_product: null,
-        }).then(() => {
-          window.location.href = "/login";
+          nickname: nickname,
+          test1_level: null,
+          test1_score: null,
+          test2_level: null,
+          test2_score: null,
         });
+      })
+      .then(() => {
+        window.location.href = "/login";
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.error(`Error [${errorCode}]: ${errorMessage}`);
       });
   }
 };

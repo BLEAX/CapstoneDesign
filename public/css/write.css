@@ -1,0 +1,164 @@
+.write-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.write-page .div {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: white;
+  width: 1448px;
+  height: 958px;
+  position: relative;
+}
+
+.write-page .footer {
+  position: absolute;
+  width: 1452px;
+  height: 205px;
+  top: 1100px;
+  left: 0;
+  background-color: transparent;
+}
+
+.write-page .overlap-group {
+  position: relative;
+  width: 1448px;
+  height: 205px;
+  background-color: #b2c1a6;
+}
+
+.write-page .line {
+  position: absolute;
+  width: 1448px;
+  height: 1px;
+  top: 20px;
+  left: 0;
+  object-fit: cover;
+}
+
+.write-page .email {
+  position: absolute;
+  width: 529px;
+  height: 80px;
+  top: 85px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  color: #4e4e4e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.write-page .text-wrapper {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  top: 45px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #4e4e4e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.write-page .header {
+  position: absolute;
+  width: 1448px;
+  height: 154px;
+  top: 0;
+  left: 0;
+}
+
+.write-page .div-2 {
+  position: absolute;
+  width: 1175px;
+  height: 579px;
+  top: 347px;
+  left: 139px;
+}
+
+.write-page .p {
+  position: absolute;
+  width: 1171px;
+  top: 81px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.write-page .text-wrapper-2 {
+  position: absolute;
+  width: 356px;
+  height: 81px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.form-group {
+  position: relative;
+  max-width: 1300;
+  padding: 20px;
+  top: 200px;
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 300px;
+}
+.form-group .done {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.form-group .done:hover {
+  background-color: #0056b3;
+}
+
+.form-group .cancel {
+  padding: 10px 15px;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.form-group .cancel:hover {
+  background-color: lightslategray;
+}

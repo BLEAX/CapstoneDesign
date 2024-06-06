@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/test_page2.css" />
     <link rel="stylesheet" href="../css/globals.css" />
+    <script type="module" src="../js/test2.js"></script>
   </head>
   <body>
     <div class="test-page">
@@ -19,7 +20,7 @@
             </menu>
           </div>
         </header>
-        <div class="finish-button" onclick="calculateTotal2()">
+        <div class="finish-button" onclick="result_sum()">
           <img
             class="finish-button-rectangle"
             src="../assets/rectangle-2-1.svg"
@@ -77,22 +78,42 @@
             </div>
             <div class="rectangle-wrapper">
               <div class="div-2">
-                <input type="radio" class="radiobutton" value="0" />
+                <input
+                  type="radio"
+                  name="question1"
+                  class="radiobutton"
+                  value="0"
+                />
               </div>
             </div>
             <div class="frame-7">
               <div class="div-2">
-                <input type="radio" class="radiobutton" value="1" />
+                <input
+                  type="radio"
+                  name="question1"
+                  class="radiobutton"
+                  value="1"
+                />
               </div>
             </div>
             <div class="frame-8">
               <div class="div-2">
-                <input type="radio" class="radiobutton" value="2" />
+                <input
+                  type="radio"
+                  name="question1"
+                  class="radiobutton"
+                  value="2"
+                />
               </div>
             </div>
             <div class="frame-9">
               <div class="div-2">
-                <input type="radio" class="radiobutton" value="3" />
+                <input
+                  type="radio"
+                  name="question1"
+                  class="radiobutton"
+                  value="3"
+                />
               </div>
             </div>
             <div class="frame-10">
@@ -100,186 +121,897 @@
                 <div class="text-wrapper-4">Feeling hot</div>
               </div>
             </div>
-            <div class="frame-11"><div class="div-2"></div></div>
-            <div class="frame-12"><div class="div-2"></div></div>
-            <div class="frame-13"><div class="div-2"></div></div>
-            <div class="frame-14"><div class="div-2"></div></div>
+            <div class="frame-11">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question2"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-12">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question2"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-13">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question2"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-14">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question2"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-15">
               <div class="div-2">
                 <div class="text-wrapper-4">Wobbliness in legs</div>
               </div>
             </div>
-            <div class="frame-16"><div class="div-2"></div></div>
-            <div class="frame-17"><div class="div-2"></div></div>
-            <div class="frame-18"><div class="div-2"></div></div>
-            <div class="frame-19"><div class="div-2"></div></div>
+            <div class="frame-16">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question3"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-17">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question3"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-18">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question3"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-19">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question3"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-20">
               <div class="div-2">
                 <div class="text-wrapper-4">Unable to relax</div>
               </div>
             </div>
-            <div class="frame-21"><div class="div-2"></div></div>
-            <div class="frame-22"><div class="div-2"></div></div>
-            <div class="frame-23"><div class="div-2"></div></div>
-            <div class="frame-24"><div class="div-2"></div></div>
+            <div class="frame-21">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question4"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-22">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question4"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-23">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question4"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-24">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question4"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-25">
               <div class="div-2">
                 <div class="text-wrapper-4">Fear of worst happening</div>
               </div>
             </div>
-            <div class="frame-26"><div class="div-2"></div></div>
-            <div class="frame-27"><div class="div-2"></div></div>
-            <div class="frame-28"><div class="div-2"></div></div>
-            <div class="frame-29"><div class="div-2"></div></div>
+            <div class="frame-26">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question5"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-27">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question5"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-28">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question5"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-29">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question5"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-30">
               <div class="div-2">
                 <div class="text-wrapper-4">Dizzy or lightheaded</div>
               </div>
             </div>
-            <div class="frame-31"><div class="div-2"></div></div>
-            <div class="frame-32"><div class="div-2"></div></div>
-            <div class="frame-33"><div class="div-2"></div></div>
-            <div class="frame-34"><div class="div-2"></div></div>
+            <div class="frame-31">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question6"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-32">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question6"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-33">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question6"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-34">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question6"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-35">
               <div class="div-2">
                 <div class="text-wrapper-4">Heart pounding/racing</div>
               </div>
             </div>
-            <div class="frame-36"><div class="div-2"></div></div>
-            <div class="frame-37"><div class="div-2"></div></div>
-            <div class="frame-38"><div class="div-2"></div></div>
-            <div class="frame-39"><div class="div-2"></div></div>
+            <div class="frame-36">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question7"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-37">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question7"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-38">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question7"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-39">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question7"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-40">
               <div class="div-2">
                 <div class="text-wrapper-4">Unsteady</div>
               </div>
             </div>
-            <div class="frame-41"><div class="div-2"></div></div>
-            <div class="frame-42"><div class="div-2"></div></div>
-            <div class="frame-43"><div class="div-2"></div></div>
-            <div class="frame-44"><div class="div-2"></div></div>
+            <div class="frame-41">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question8"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-42">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question8"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-43">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question8"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-44">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question8"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-45">
               <div class="div-2">
                 <div class="text-wrapper-4">Terrified of afraid</div>
               </div>
             </div>
-            <div class="frame-46"><div class="div-2"></div></div>
-            <div class="frame-47"><div class="div-2"></div></div>
-            <div class="frame-48"><div class="div-2"></div></div>
-            <div class="frame-49"><div class="div-2"></div></div>
+            <div class="frame-46">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question9"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-47">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question9"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-48">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question9"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-49">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question9"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-50">
               <div class="div-2"><div class="text-wrapper-4">Nervous</div></div>
             </div>
-            <div class="frame-51"><div class="div-2"></div></div>
-            <div class="frame-52"><div class="div-2"></div></div>
-            <div class="frame-53"><div class="div-2"></div></div>
-            <div class="frame-54"><div class="div-2"></div></div>
+            <div class="frame-51">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question10"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-52">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question10"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-53">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question10"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-54">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question10"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-55">
               <div class="div-2">
                 <div class="text-wrapper-4">Feeling of choking</div>
               </div>
             </div>
-            <div class="frame-56"><div class="div-2"></div></div>
-            <div class="frame-57"><div class="div-2"></div></div>
-            <div class="frame-58"><div class="div-2"></div></div>
-            <div class="frame-59"><div class="div-2"></div></div>
+            <div class="frame-56">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question11"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-57">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question11"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-58">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question11"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-59">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question11"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-60">
               <div class="div-2">
                 <div class="text-wrapper-4">Hands trembling</div>
               </div>
             </div>
-            <div class="frame-61"><div class="div-2"></div></div>
-            <div class="frame-62"><div class="div-2"></div></div>
-            <div class="frame-63"><div class="div-2"></div></div>
-            <div class="frame-64"><div class="div-2"></div></div>
+            <div class="frame-61">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question12"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-62">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question12"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-63">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question12"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-64">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question12"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-65">
               <div class="div-2">
                 <div class="text-wrapper-4">Shaky / unsteady</div>
               </div>
             </div>
-            <div class="frame-66"><div class="div-2"></div></div>
-            <div class="frame-67"><div class="div-2"></div></div>
-            <div class="frame-68"><div class="div-2"></div></div>
-            <div class="frame-69"><div class="div-2"></div></div>
+            <div class="frame-66">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question13"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-67">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question13"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-68">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question13"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-69">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question13"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-70">
               <div class="div-2">
                 <div class="text-wrapper-4">Fear of losing control</div>
               </div>
             </div>
-            <div class="frame-71"><div class="div-2"></div></div>
-            <div class="frame-72"><div class="div-2"></div></div>
-            <div class="frame-73"><div class="div-2"></div></div>
-            <div class="frame-74"><div class="div-2"></div></div>
+            <div class="frame-71">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question14"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-72">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question14"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-73">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question14"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-74">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question14"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-75">
               <div class="div-2">
                 <div class="text-wrapper-4">Difficulty in breathing</div>
               </div>
             </div>
-            <div class="frame-76"><div class="div-2"></div></div>
-            <div class="frame-77"><div class="div-2"></div></div>
-            <div class="frame-78"><div class="div-2"></div></div>
-            <div class="frame-79"><div class="div-2"></div></div>
+            <div class="frame-76">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question15"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-77">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question15"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-78">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question15"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-79">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question15"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-80">
               <div class="div-2">
                 <div class="text-wrapper-4">Fear of dying</div>
               </div>
             </div>
-            <div class="frame-81"><div class="div-2"></div></div>
-            <div class="frame-82"><div class="div-2"></div></div>
-            <div class="frame-83"><div class="div-2"></div></div>
-            <div class="frame-84"><div class="div-2"></div></div>
+            <div class="frame-81">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question16"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-82">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question16"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-83">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question16"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-84">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question16"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-85">
               <div class="div-2"><div class="text-wrapper-4">Scared</div></div>
             </div>
-            <div class="frame-86"><div class="div-2"></div></div>
-            <div class="frame-87"><div class="div-2"></div></div>
-            <div class="frame-88"><div class="div-2"></div></div>
-            <div class="frame-89"><div class="div-2"></div></div>
+            <div class="frame-86">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question17"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-87">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question17"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-88">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question17"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-89">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question17"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-90">
               <div class="div-2">
                 <div class="text-wrapper-4">Indigestion</div>
               </div>
             </div>
-            <div class="frame-91"><div class="div-2"></div></div>
-            <div class="frame-92"><div class="div-2"></div></div>
-            <div class="frame-93"><div class="div-2"></div></div>
-            <div class="frame-94"><div class="div-2"></div></div>
+            <div class="frame-91">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question18"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-92">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question18"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-93">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question18"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-94">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question18"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-95">
               <div class="div-2">
                 <div class="text-wrapper-4">Faint / lightheaded</div>
               </div>
             </div>
-            <div class="frame-96"><div class="div-2"></div></div>
-            <div class="frame-97"><div class="div-2"></div></div>
-            <div class="frame-98"><div class="div-2"></div></div>
-            <div class="frame-99"><div class="div-2"></div></div>
+            <div class="frame-96">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question19"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-97">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question19"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-98">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question19"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-99">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question19"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-100">
               <div class="div-2">
                 <div class="text-wrapper-4">Face flushed</div>
               </div>
             </div>
-            <div class="frame-101"><div class="div-2"></div></div>
-            <div class="frame-102"><div class="div-2"></div></div>
-            <div class="frame-103"><div class="div-2"></div></div>
-            <div class="frame-104"><div class="div-2"></div></div>
+            <div class="frame-101">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question20"
+                  class="radiobutton"
+                  value="0"
+                />
+              </div>
+            </div>
+            <div class="frame-102">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question20"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-103">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question20"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-104">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question20"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
             <div class="frame-105">
               <div class="div-2">
                 <div class="text-wrapper-4">Hot/cold sweats</div>
               </div>
             </div>
-            <div class="frame-106"><div class="div-2"></div></div>
-            <div class="frame-107"><div class="div-2"></div></div>
-            <div class="frame-108"><div class="div-2"></div></div>
-            <div class="frame-109"><div class="div-2"></div></div>
-            <div class="frame-110">
-              <div class="overlap-3">
-                <div class="text-wrapper-4">Column Sum</div>
+            <div class="frame-106">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question21"
+                  class="radiobutton"
+                  value="0"
+                />
               </div>
             </div>
-            <div class="frame-111"><div class="div-2"></div></div>
-            <div class="frame-112"><div class="div-2"></div></div>
-            <div class="frame-113"><div class="div-2"></div></div>
-            <div class="frame-114"><div class="rectangle"></div></div>
+            <div class="frame-107">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question21"
+                  class="radiobutton"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="frame-108">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question21"
+                  class="radiobutton"
+                  value="2"
+                />
+              </div>
+            </div>
+            <div class="frame-109">
+              <div class="div-2">
+                <input
+                  type="radio"
+                  name="question21"
+                  class="radiobutton"
+                  value="3"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <p class="please-read-each">
@@ -302,8 +1034,28 @@
       </div>
     </div>
     <script>
-      function calculateTotal2() {
-        window.location.href = "result2";
+      function result_sum() {
+        let selectedRadio;
+        let selectedValueSum = 0;
+        let flag = false;
+
+        for (let i = 1; i <= 21; i++) {
+          selectedRadio = document.querySelector(
+            `input[name="question${i}"]:checked`
+          );
+          if (selectedRadio != null) {
+            selectedValueSum += parseInt(selectedRadio.value);
+          } else {
+            flag = true;
+          }
+        }
+
+        if (flag == true) {
+          alert("Please select an option before proceeding.");
+        } else {
+          localStorage.setItem("test2_value", selectedValueSum); //찾아보기
+          window.location.href = "/result2";
+        }
       }
     </script>
   </body>

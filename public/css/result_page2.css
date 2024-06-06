@@ -1,0 +1,128 @@
+.result {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.result .result-page {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgb(242.91, 243.31, 223.04) 40.5%,
+    rgb(192.28, 224.19, 167.21) 100%
+  );
+  width: 1448px;
+  height: 1329px;
+  position: relative;
+}
+
+.result .footer {
+  position: absolute;
+  width: 1452px;
+  height: 205px;
+  top: 1124px;
+  left: 0;
+  background-color: transparent;
+}
+
+.result .overlap-group {
+  position: relative;
+  width: 1448px;
+  height: 205px;
+  background-color: #b2c1a6;
+}
+
+.result .line {
+  position: absolute;
+  width: 1448px;
+  height: 1px;
+  top: 20px;
+  left: 0;
+  object-fit: cover;
+}
+
+.result .email {
+  position: absolute;
+  width: 529px;
+  height: 80px;
+  top: 85px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  color: #4e4e4e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.result .text-wrapper {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  top: 45px;
+  left: 192px;
+  font-family: "Crimson Text", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: #4e4e4e;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.result .scoring {
+  position: absolute;
+  width: 761px;
+  height: 575px;
+  top: 347px;
+  left: 345px;
+}
+
+.result .INTERPRETING-THE {
+  position: absolute;
+  width: 759px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.result .span {
+  font-weight: 800;
+}
+
+.result .text-wrapper-2 {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.result .text-wrapper-3 {
+  font-weight: 700;
+}
+
+.result .text-wrapper-4 {
+  font-weight: 900;
+}
+
+.result .text-wrapper-5 {
+  text-decoration: underline;
+}
+
+.result .header {
+  position: absolute;
+  width: 1448px;
+  height: 154px;
+  top: 0;
+  left: 0;
+}

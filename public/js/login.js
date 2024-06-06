@@ -4,12 +4,7 @@ import {
   getAuth,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
-import {
-  getFirestore,
-  doc,
-  getDoc,
-  collection,
-} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC4JdgfKdIAeTh5QfzhoMF-dDWPfQewbKE",
@@ -26,20 +21,6 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-function handleLoginSuccess(user) {
-  //로그인 후 할 일
-  // 사용자의 데이터를 가져옴
-  const userRef = doc(collection(db, "users"), user.uid);
-
-  getDoc(userRef)
-    .then((doc) => {
-      location.href = "/main";
-    })
-    .catch((error) => {
-      console.log("Error getting user document:", error);
-    });
-}
-
 // 로그인 버튼 클릭 시 호출되는 함수
 window.login = function (e) {
   e.preventDefault();
@@ -51,14 +32,12 @@ window.login = function (e) {
     .then((userCredential) => {
       const user = userCredential.user;
       alert("로그인에 성공했습니다.");
-
-      // 로그인 후에 사용자의 데이터 확인 및 처리 함수 호출
-      handleLoginSuccess(user);
+      location.href = "/main";
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorMessage);
+      console.error(`Error [${errorCode}]: ${errorMessage}`);
       alert("다시 입력해주세요.");
       document.querySelectorAll("input[class=form-control]")[0].value = null;
       document.querySelectorAll("input[class=form-control]")[1].value = null;

@@ -78,7 +78,7 @@
   position: absolute;
   width: 656px;
   height: 184px;
-  top: 2837px;
+  top: 2687px;
   left: 397px;
 }
 
@@ -106,19 +106,11 @@
   object-fit: cover;
 }
 
-.mainpage .place-recommendation {
+.mainpage .dog-recommendation {
   position: absolute;
   width: 656px;
   height: 184px;
-  top: 2603px;
-  left: 397px;
-}
-
-.mainpage .music-recommendation {
-  position: absolute;
-  width: 656px;
-  height: 184px;
-  top: 2369px;
+  top: 2453px;
   left: 397px;
 }
 

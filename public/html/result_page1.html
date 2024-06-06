@@ -61,6 +61,57 @@
             >
           </p>
         </div>
+        <script>
+          var page1Value = parseInt(localStorage.getItem("page1Value"));
+          var page2Value = parseInt(localStorage.getItem("page2Value"));
+          var page3Value = parseInt(localStorage.getItem("page3Value"));
+          var total = page1Value + page2Value + page3Value;
+
+          switch (true) {
+            case total > 40:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: red;'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: red;'><u>Extreme depression</u></span>";
+              break;
+            case total > 30:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: darkorange;'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: darkorange;'><u>Severe depression</u></span>";
+              break;
+            case total > 20:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: rgb(255, 183, 0);'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: rgb(255, 183, 0);'><u>Moderate depression</u></span>";
+              break;
+            case total > 16:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: yellowgreen;'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: yellowgreen;'><u>Borderline clinical depression</u></span>";
+              break;
+            case total > 10:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: green;'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: green;'><u>Mild mood disturbance</u></span>";
+              break;
+            default:
+              document.getElementById("total_score").innerHTML =
+                "Your Total Score :  " +
+                `<span style='color: blue;'><u>${total}</u></span>`;
+              document.getElementById("depression_level").innerHTML =
+                "Your Level of Depression :  <span style='color: blue;'><u>These ups and downs are considered normal</u></span>";
+              break;
+          }
+        </script>
       </div>
     </div>
     <script>
